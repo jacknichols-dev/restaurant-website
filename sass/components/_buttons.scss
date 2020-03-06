@@ -9,7 +9,8 @@
 
     &:hover {
         border: $b-2; 
-        color: #fff; 
+        color: #fff;
+        transition: all .2s ease;
     }
 }
 

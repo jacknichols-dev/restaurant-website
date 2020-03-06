@@ -13,3 +13,8 @@ body {
 h1, h2, h3 {
     font-family: $f2;
 }
+
+::selection {
+    color: $sec;
+    background-color: $pri;
+  }

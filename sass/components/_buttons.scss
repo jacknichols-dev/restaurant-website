@@ -1,15 +1,15 @@
 .btn {
     padding: .9rem 3rem;
     background-color: transparent;
-    border: solid #fff 1.5px;
+    border: $b;
     border-radius: 3px;
     color: $sec;
     text-decoration: none;
     transition: all .2s ease;
 
     &:hover {
-        background-color: #fff;   
-        color: $pri; 
+        border: $b-2; 
+        color: #fff; 
     }
 }
 
@@ -23,6 +23,6 @@
     &:hover {
         background-color: $pri;
         color: #fff;
-        border: solid 1.5px transparent;
+        border: solid 1px transparent;
     }
 }

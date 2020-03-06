@@ -11,7 +11,7 @@
         background-image: linear-gradient(to top, rgba(0,0,0, .7), rgba(0,0,0,.1)), url(/img/hero.jpg);
         top: 0;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         background-size: cover;
         background-repeat: no-repeat;
         z-index: -1;
@@ -20,7 +20,6 @@
 
 .hero-left {
     width: 25rem;
-    height: 100vh;
     margin: 8rem 0;
 
     &__img1 {
@@ -31,7 +30,7 @@
         background-size: contain;
         margin: 4rem 0 1.6rem 0;
         border-radius: 1rem;
-        border: solid $sec 3px;
+        border: $b;
     }
 
     &__img2 {
@@ -42,7 +41,7 @@
         background-size: contain;
         margin-bottom: 4rem;
         border-radius: 1rem;
-        border: solid $sec 3px;
+        border: $b;
     }
 
     & p {

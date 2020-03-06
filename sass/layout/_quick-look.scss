@@ -1,0 +1,11 @@
+.quick-look {
+    min-height: 100%;
+    text-align: center;
+    margin: 20rem 0;
+
+    & p {
+        padding: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+}

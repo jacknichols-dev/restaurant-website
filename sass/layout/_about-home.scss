@@ -4,8 +4,21 @@
 .about-home {
 
     &__title {
+        font-size: 3rem;
+        margin: 30rem 0 0 0;
         text-align: center;
-        margin: 30rem 0 5rem 0;
+    }
+
+    &__secondary-title {
+        margin: 1rem 0 1rem 0;
+        text-align: center;
+
+        &--underline{
+            height: .3rem;
+            width: 9rem;
+            background-color: $sec;
+            margin: 0 auto;
+        }
     }
 
     &__chef {
@@ -15,7 +28,7 @@
 
     &__cta-box {
         display: flex;
-        margin: 0 auto;
+        margin: 5rem 0 .5rem 0;
         align-items: center;
         height: 29.8rem;
         background-color: transparent;
@@ -34,8 +47,26 @@
         justify-content: space-between;
         margin: 5rem 0;
         
-        & *{
-            border: 1px solid $pri;
+        &--1 {
+            background-image: url(/img/about-img1.jpg);
+            background-size: cover;
+            width: 31.6rem;
+            height: 31.6rem;
         }
+        
+        &--2 {
+            background-image: url(/img/about-img2.jpg);
+            background-size: cover;
+            width: 48.2rem;
+            height: 31.6rem;
+        }
+
+        &--3 {
+            background-image: url(/img/about-img3.jpg);
+            background-size: cover;
+            width: 48.2rem;
+            height: 31.6rem;
+        }
+
     }
 }

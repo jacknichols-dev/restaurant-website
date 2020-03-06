@@ -1,0 +1,41 @@
+.menu-items {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 31.6rem;
+    // text-align: center;
+
+    &__img {
+        width: 20rem;
+        margin: 4rem auto;
+
+        &--1 {
+            width: 15rem;
+        }
+        &--2 {
+            width: 25rem;
+        }
+    }
+
+    &__desc-box {
+        background-color: $pri;
+        bottom: 0;
+        padding: 1.5rem;
+
+        &--heading {
+            color: $sec;
+        }
+
+        & p {
+            color: #fff;
+        }
+    }
+}

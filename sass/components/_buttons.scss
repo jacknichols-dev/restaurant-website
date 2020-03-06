@@ -1,0 +1,28 @@
+.btn {
+    padding: .9rem 3rem;
+    background-color: transparent;
+    border: solid #fff 1.5px;
+    border-radius: 3px;
+    color: $sec;
+    text-decoration: none;
+    transition: all .2s ease;
+
+    &:hover {
+        background-color: #fff;   
+        color: $pri; 
+    }
+}
+
+.btn-img {    
+    width: 1.5rem;
+}
+
+.about-btn {
+    border-color: $sec;
+
+    &:hover {
+        background-color: $pri;
+        color: #fff;
+        border: solid 1.5px transparent;
+    }
+}

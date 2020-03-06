@@ -1,0 +1,41 @@
+
+/*--------------- @EZFOOD ----------------*/
+
+.about-home {
+
+    &__title {
+        text-align: center;
+        margin: 30rem 0 5rem 0;
+    }
+
+    &__chef {
+        width: 40rem;
+        align-self: stretch;
+    }
+
+    &__cta-box {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        height: 29.8rem;
+        background-color: transparent;
+        border: 1px solid $pri;
+        border-radius: .3rem;
+        box-shadow: $shadow;
+    }
+
+    & p {
+        margin-bottom: 3rem;
+        width: 90%;
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        margin: 5rem 0;
+        
+        & *{
+            border: 1px solid $pri;
+        }
+    }
+}

@@ -1,0 +1,274 @@
+/*--------- COLOURS ---------*/
+/*--------- FONTS ---------*/
+/*--------- SHADOW ---------*/
+/*--------- BORDER ---------*/
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap");
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.65rem;
+  font-weight: 300;
+  color: #00263B;
+  font-family: "Muli", sans-serif;
+  line-height: 1.29;
+  -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3 {
+  font-family: "Noto Sans", sans-serif; }
+
+.btn {
+  padding: .9rem 3rem;
+  background-color: transparent;
+  border: solid #fff 1.5px;
+  border-radius: 3px;
+  color: #AF652E;
+  text-decoration: none;
+  transition: all .2s ease; }
+  .btn:hover {
+    background-color: #fff;
+    color: #00263B; }
+
+.btn-img {
+  width: 1.5rem; }
+
+.about-btn {
+  border-color: #AF652E; }
+  .about-btn:hover {
+    background-color: #00263B;
+    color: #fff;
+    border: solid 1.5px transparent; }
+
+.hero__container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 90%; }
+
+.hero__img {
+  position: fixed;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(/img/hero.jpg);
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1; }
+
+.hero-left {
+  width: 25rem;
+  height: 100vh;
+  margin: 8rem 0; }
+  .hero-left__img1 {
+    width: 25rem;
+    background-image: url(/img/hero-img1.jpg);
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 4rem 0 1.6rem 0;
+    border-radius: 1rem;
+    border: solid #AF652E 3px; }
+  .hero-left__img2 {
+    width: 25rem;
+    background-image: url(/img/hero-img2.jpg);
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    border: solid #AF652E 3px; }
+  .hero-left p {
+    color: #fff;
+    margin-top: 1rem; }
+
+.booking-link {
+  display: inline-block;
+  position: relative;
+  padding-bottom: .8rem; }
+  .booking-link a {
+    text-decoration: none;
+    color: #fff; }
+    .booking-link a * {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem; }
+
+.booking-link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  transition: width 0s ease, background .5s; }
+
+.booking-link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #AF652E;
+  transition: width .5s ease; }
+
+.booking-link:hover:before {
+  width: 100%;
+  background: #AF652E;
+  transition: width .5s ease; }
+
+.booking-link:hover:after {
+  width: 100%;
+  background: transparent;
+  transition: all 0s ease; }
+
+.hero-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4rem;
+  text-align: center;
+  color: #fff;
+  width: 55rem;
+  height: 27rem;
+  background-color: #00263B;
+  box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.7); }
+  .hero-box__box {
+    margin-bottom: 5rem; }
+  .hero-box p {
+    color: #AF652E;
+    margin-bottom: 3rem; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.3);
+  z-index: 1; }
+
+.nav {
+  max-width: 90%;
+  margin: 0 auto;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .nav__logo-link {
+    text-decoration: none;
+    color: #00263B; }
+    .nav__logo-link:hover {
+      color: #AF652E; }
+  .nav__list {
+    list-style-type: none;
+    margin-left: 16rem; }
+  .nav__item {
+    display: inline-block;
+    margin-left: 3rem; }
+  .nav a {
+    text-decoration: none;
+    color: #00263B;
+    transition: color .2s ease; }
+    .nav a::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      height: 1px;
+      background-color: #AF652E; }
+    .nav a:hover {
+      color: #AF652E;
+      transition: color .2s ease; }
+
+.nav-contact {
+  display: flex;
+  align-items: center; }
+  .nav-contact a {
+    color: #00263B;
+    display: flex;
+    text-decoration: none; }
+    .nav-contact a:hover {
+      color: #AF652E; }
+  .nav-contact__phone, .nav-contact p {
+    margin-right: 2rem; }
+  .nav-contact__social {
+    background-color: #00263B;
+    display: flex;
+    align-items: center;
+    width: 11rem;
+    height: 8rem; }
+    .nav-contact__social--link {
+      display: flex; }
+    .nav-contact__social--fb {
+      margin-left: 2rem;
+      transition: transform .2s ease-in-out; }
+      .nav-contact__social--fb:hover {
+        transform: scale(1.2);
+        transition: transform .2s ease-in-out; }
+    .nav-contact__social--tw {
+      margin-left: 1.5rem;
+      transition: transform .2s ease-in-out; }
+      .nav-contact__social--tw:hover {
+        transform: scale(1.2);
+        transition: transform .2s ease-in-out; }
+  .nav-contact__fb-box {
+    display: flex;
+    width: 50%;
+    align-items: center; }
+  .nav-contact__tw-box {
+    display: flex;
+    width: 50%;
+    align-items: center; }
+
+/*--------------- @EZFOOD ----------------*/
+.about-home__title {
+  text-align: center;
+  margin: 30rem 0 5rem 0; }
+
+.about-home__chef {
+  width: 40rem;
+  align-self: stretch; }
+
+.about-home__cta-box {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  height: 29.8rem;
+  background-color: transparent;
+  border: 1px solid #00263B;
+  border-radius: .3rem;
+  box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.3); }
+
+.about-home p {
+  margin-bottom: 3rem;
+  width: 90%; }
+
+.about-home__images {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0; }
+  .about-home__images * {
+    border: 1px solid #00263B; }
+
+#main {
+  position: absolute;
+  top: 90%;
+  background: #fff;
+  background-image: url(/img/bg-img.svg);
+  background-position: top;
+  min-height: 100%;
+  min-width: 100%;
+  clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%); }
+
+.main-container {
+  width: 68%;
+  margin: 0 auto; }

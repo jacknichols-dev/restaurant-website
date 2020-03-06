@@ -1,0 +1,117 @@
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: $shadow;
+    z-index: 1;
+}
+
+.nav {
+    max-width: 90%;
+    margin: 0 auto;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo-link {
+        text-decoration: none;
+        color: $pri;
+
+        &:hover {
+            color: $sec;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        margin-left: 16rem;
+    }
+
+    &__item {
+        display: inline-block;
+        margin-left: 3rem;
+    }
+
+    & a {
+        text-decoration: none;
+        color: $pri;
+        transition: color .2s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            height: 1px;
+            background-color: $sec;
+        }
+
+        &:hover {
+            color: $sec;
+            transition: color .2s ease;
+        }
+    }
+}
+
+.nav-contact {
+    display: flex;
+    align-items: center;
+
+    & a{
+        color: $pri;
+        display: flex;
+        text-decoration: none;
+
+        &:hover {
+            color: $sec;
+        }
+    }
+
+    &__phone, p {
+        margin-right: 2rem;
+    }
+
+    &__social {
+        background-color: $pri;
+        display: flex;
+        align-items: center;
+        width: 11rem;
+        height: 8rem;
+
+        &--link {
+            display: flex;
+        }
+
+        &--fb {
+            margin-left: 2rem;
+            transition: transform .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: transform .2s ease-in-out;
+            }
+        }
+
+        &--tw {
+            margin-left: 1.5rem;
+            transition: transform .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: transform .2s ease-in-out;
+            }
+        }
+    }
+
+    &__fb-box {
+        display: flex;
+        width: 50%;
+        align-items: center;
+    }
+
+    &__tw-box {
+        display: flex;
+        width: 50%;
+        align-items: center;
+    }
+}

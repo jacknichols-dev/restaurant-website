@@ -5,12 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-    Hello world!
-    <div class="hello">
-        hI
-    </div>
+
+    <!-------------------- NAVIGATION ------------------------->
+
+    <nav>
+        <section class="nav">
+            <a href="#" class="nav__logo-link"><h3 class="nav__logo">YUM</h3></a>
+            <ul class="nav__list">
+                    <li class="nav__item"><a href="#">Home</a></li>
+                    <li class="nav__item"><a href="#">Menu</a></li>
+                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a href="#">Contact</a></li>
+                    <li class="nav__item"><a href="#">Booking</a></li>    
+            </ul>
+
+            <container class="nav-contact">
+                <a href="#">
+                    <img src="img/Icon-phone-alt.svg" alt="contact-icon" class="nav-contact__phone"></img>
+                    <p>000-000-12-34</p>
+                </a>
+
+                <div class="nav-contact__social">
+                    <div class="nav-contact__fb-box">
+                        <a href="https://www.facebook.com/" target="_blank" class="nav-contact__social--li"><img src="img/Icon-facebook.svg" alt="facebook" class="nav-contact__social--fb"></a>
+                    </div>
+
+                    <div class="nav-contact__tw-box">
+                        <a href="https://www.twitter.com/" target="_blank" class="nav-contact__social--li"><img src="img/Icon-twitter.svg" alt="twitter" class="nav-contact__social--tw"></a>    
+                    </div>
+                </div>
+                </container>
+        </section>
+    </nav>
+
+        <!-------------------- HERO ------------------------->
+
+    <section class="hero">
+        <div class="hero__img"></div>
+        <container class="hero__container">
+            <container class="hero-left">
+                <div class="hero-left__img1"></div>
+                <div class="hero-left__img2"></div>
+
+                <container class="booking-link">
+                    <a href="#">
+                        <h3>Make a booking&nbsp;&nbsp;
+                            <img src="img/Icon-note.svg" alt="booking link" class="booking-link__icon">
+                            <img src="img/Icon-arrow-forward.svg" alt="booking link" class="booking-link__icon">
+                        </h3>
+                        <span class="booking-link__underline"></span>
+                    </a>
+                </container>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    sed diam nonumy eirmod tempor <strong> ut labore et dolore</strong> magna erat, 
+                    sed diam voluptua.
+                </p>
+            </container>
+            <container class="hero-box">
+                    <div class="hero-box__box">
+                        <h1>EZFood</h1>
+                        <h3>111 Broadmore Street, London L555 90D</h3>    
+                    </div>
+                    <p>Check out our delicious menu</p>
+                    <a href="#" class="btn btn-hero"><img src="img/Icon-menu.svg" alt="menu button" class="btn-img"> Menu</a>
+            </container>
+        </container>
+    </section>    
+
+        <!-------------------- MAIN ------------------------->
+    
+    <main id="main">
+        <section class="main-container">
+                <!-------------------- ABOUT-HOME ------------------------->
+
+                <section class="about-home">
+                    <h1 class="about-home__title">YUM</h1>
+                    <container class="about-home__cta-box">
+                        <img src="img/chef.png" alt="chef image" class="about-home__chef">
+                        <container class="about-home__cta">
+                            <p>At EZFood, you will be looked after well, with our friendly staff, 
+                                always on hand. Our food is sourced locally from suppliers that we 
+                                know personaly, ensuring the best and freshest meals, cooked by our 
+                                highly experienced, professional chefs. Our baked goods freshly 
+                                made on a daily basis, made with love by our in-house bakers.</p>
+                            <a href="#" class="btn about-btn">
+                                <img src="img/Icon-menu.svg" alt="About button" class="btn-img">
+                                    About Us
+                                </a>
+                        </container>
+                    </container>
+        
+                    <container class="about-home__images">
+                        <img src="img/about-img1.jpg" alt="food picture">
+                        <img src="img/about-img2.jpg" alt="food picture">
+                        <img src="img/about-img3.jpg" alt="food picture">
+                    </container>
+                </section>
+        
+                        <!-------------------- QUICK LOOK ------------------------->
+        
+                <section class="quick-look">
+                    <h1 class="quick-look__title">A QUICK LOOK AT OUR BEST</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                    <a href="#" class="btn about-btn"><img src="img/Icon-menu.svg" alt="About button" class="btn-img">Menu</a>
+                </section>        
+        </section>
+    </main>
 </body>
 </html>

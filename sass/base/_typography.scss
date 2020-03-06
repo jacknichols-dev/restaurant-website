@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap');
+
+body {
+    font-size: 1.65rem;
+    font-weight: 300;
+    color: $pri;
+    font-family: $f1;
+    line-height: 1.29;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-family: $f2;
+}

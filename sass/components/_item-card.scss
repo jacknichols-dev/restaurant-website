@@ -1,41 +1,41 @@
 .menu-items {
-    margin: 5rem auto;
+    margin: 10rem auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .item-card {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 31.6rem;
-    // text-align: center;
+    height: 30rem;
+    width: 24rem;
+    transition: transform .1s ease-in-out;
+
+    &:hover {
+        transform: translateY(-8%) scale(1.1);
+    }
 
     &__img {
-        width: 20rem;
-        margin: 4rem auto;
-
-        &--1 {
-            width: 15rem;
-        }
-        &--2 {
-            width: 25rem;
-        }
+        width: 100%;
     }
 
     &__desc-box {
         background-color: $pri;
-        bottom: 0;
         padding: 1.5rem;
+
 
         &--heading {
             color: $sec;
+            width: 80%;
+            margin: 0 auto;
         }
 
         & p {
             color: #fff;
+            width: 100%;
+            font-size: 1.4rem;
         }
     }
 }

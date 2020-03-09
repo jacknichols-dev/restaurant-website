@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <!-------------------- NAVIGATION ------------------------->
+
+    <nav>
+        <section class="nav">
+            <a href="index.html" class="nav__logo-link"><h3 class="nav__logo">JACK'S INN</h3></a>
+            <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html">Home</a></li>
+                    <li class="nav__item"><a href="#">Menu</a></li>
+                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a href="#">Contact</a></li>
+                    <li class="nav__item"><a href="#">Booking</a></li>    
+            </ul>
+
+            <container class="nav-contact">
+                <a href="#">
+                    <img src="img/Icon-phone-alt.svg" alt="contact-icon" class="nav-contact__phone"></img>
+                    <p>000-000-12-34</p>
+                </a>
+
+                <div class="nav-contact__social">
+                    <div class="nav-contact__fb-box">
+                        <a href="https://www.facebook.com/" target="_blank" class="nav-contact__social--li"><img src="img/Icon-facebook.svg" alt="facebook" class="nav-contact__social--fb"></a>
+                    </div>
+
+                    <div class="nav-contact__tw-box">
+                        <a href="https://www.twitter.com/" target="_blank" class="nav-contact__social--li"><img src="img/Icon-twitter.svg" alt="twitter" class="nav-contact__social--tw"></a>    
+                    </div>
+                </div>
+                </container>
+        </section>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+
+    <div class="hamburger">
+        <input type="checkbox" class="hamburger__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="hamburger__button">
+            <span class="hamburger__icon">&nbsp;</span>
+        </label>
+            
+        <div class="hamburger__background">&nbsp;</div>
+
+        <nav class="hamburger__nav">
+            <ul class="hamburger__list">
+                <li class="hamburger__item"><a href="index.html" class="hamburger__link">Home</a></li>
+                <li class="hamburger__item"><a href="menu.html" class="hamburger__link">Menu</a></li>
+                <li class="hamburger__item"><a href="#" class="hamburger__link">About</a></li>
+                <li class="hamburger__item"><a href="#" class="hamburger__link">Contact</a></li>
+                <li class="hamburger__item"><a href="#" class="hamburger__link">Booking</a></li>
+            </ul>
+        </nav>
+    </div>
+
+        <!-------------------- MENU NAV ------------------------->
+    
+    <nav class="menu-nav">
+        <container class="menu-nav__container">
+                <ul class="menu-nav__list">
+                    <li class="menu-nav__item"><a href="#startersHeader" class="menu-nav__link">Starters</a></li>
+                    <li class="menu-nav__item"><a href="#mainsHeader" class="menu-nav__link">Mains</a></li>
+                    <li class="menu-nav__item"><a href="#dessertsHeader" class="menu-nav__link">Desserts</a></li>
+                    <li class="menu-nav__item"><a href="#" class="menu-nav__link">Sides</a></li>
+                    <li class="menu-nav__item"><a href="#" class="menu-nav__link">Drinks</a></li>
+                </ul>    
+        </container>
+    </nav>
+    
+        <!-------------------- MAIN MENU SECTION ------------------------->
+
+    <main id="main-menu">
+        <container class="menu-container">
+
+        <!-------------------- MAIN MENU HEADER ------------------------->
+
+            <header class="menu-header">
+                <img src="img/menu-img-top.jpg" class="menu-header__img">
+                <div class="menu-header__box">
+                    <h2>Our delicious menu is served fresh, all our recipes have been produced,
+                        and made with love by our passionate chefs.</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy 
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor 
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores 
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </header>
+
+        <!-------------------- STARTERS HEADER ------------------------->
+
+        <header id="startersHeader">
+            <container class="section-header">
+                <div class="section-header__box">
+                    <div class="section-header__box--img section-header__box--img-1"></div>
+                    <div class="section-header__box--box">
+                        <h1>STARTERS</h1>
+                    </div>    
+                </div>
+                <p class="section-header__prg">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+                    voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
+                    clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit 
+                    amet. Lorem ipsum dolor sit amet.
+                </p>
+            </container>
+        </header>
+        <!-------------------- STARTER ITEMS ------------------------->
+        <!-- Row 1 -->
+        <!-- item 1 -->
+        <container class="item-row">
+            <div class="item-container">
+                <div class="starter-item">
+                    <div class="starter-item__img starter-item__img--1"></div>
+                    <div class="starter-item__box">
+                        <h3 class="starter-item__box--header">Starter one</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="starter-item__box--price">£10.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 2 -->
+            <div class="item-container">
+                <div class="starter-item">
+                    <div class="starter-item__img--2"></div>
+                    <div class="starter-item__box">
+                        <h3 class="starter-item__box--header">Starter two</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="starter-item__box--price">£8.00</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+
+        <!-- Row 2 -->
+        <!-- item 3 -->
+        <container class="item-row">
+            <div class="item-container">
+                <div class="starter-item">
+                    <div class="starter-item__img starter-item__img--3"></div>
+                    <div class="starter-item__box">
+                        <h3 class="starter-item__box--header">Starter three</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="starter-item__box--price">£6.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 4 -->
+            <div class="item-container">
+                <div class="starter-item">
+                    <div class="starter-item__img starter-item__img--4"></div>
+                    <div class="starter-item__box">
+                        <h3 class="starter-item__box--header">Starter four</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="starter-item__box--price">£8.00</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+
+
+            <!-------------------- MAINS HEADER ------------------------->
+
+            <header id="mainsHeader">
+                <container class="section-header">
+                    <div class="section-header__box">
+                        <div class="section-header__box--img section-header__box--img-2"></div>
+                        <div class="section-header__box--box">
+                            <h1>MAINS</h1>
+                        </div>    
+                    </div>
+                    <p class="section-header__prg">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet 
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit 
+                        amet. Lorem ipsum dolor sit amet.
+                    </p>
+                </container>
+            </header>  
+
+        <!-------------------- MAIN ITEMS ------------------------->
+        <!-- Row 1 -->
+        <!-- item 1 -->
+        <container class="item-row">
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img main-item__img--1"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main one</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£16.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 2 -->
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img--2"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main two</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£15.00</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+
+        <!-- Row 2 -->
+        <!-- item 3 -->
+        <container class="item-row">
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img main-item__img--3"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main three</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£12.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 4 -->
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img main-item__img--4"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main four</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£14.00</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+        <!-- Row 3 -->
+        <!-- item 5 -->
+        <container class="item-row">
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img main-item__img--5"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main five</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£16.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 6 -->
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img main-item__img--6"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main six</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£15.00</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+
+        <!-- Row 4 -->
+        <!-- item 7 -->
+        <container class="item-row">
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img main-item__img--7"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main seven</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£12.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 8 -->
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img main-item__img--8"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main eight</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£14.00</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+        <!-- Row 5 -->
+        <!-- item 9 -->
+        <container class="item-row">
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img main-item__img--9"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main nine</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£16.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item 10 -->
+            <div class="item-container">
+                <div class="main-item">
+                    <div class="main-item__img main-item__img--10"></div>
+                    <div class="main-item__box">
+                        <h3 class="main-item__box--header">main ten</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                            erat, sed diam voluptua.
+                        </p>
+                        <p class="main-item__box--price">£15.00</p>
+                    </div>
+                </div>
+            </div>
+        </container>
+
+
+
+
+    </main>
+        <!-------------------- FOOTER ------------------------->
+
+    <section class="footer">
+        <div class="footer__container">
+            <container class="footer__box">
+                <h3>Contact <br>
+                +41 22 734 41 00</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
+            </container>
+            <container class="footer__box">
+                <h3>Legal Menu</h3>
+                <div class="footer__box-container footer__box-container--2">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Copyright Notice</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </container>
+            <container class="footer__box">
+                <h3>Social Media</h3>
+                <div class="footer__box-container footer__box-container--3">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/Icon-facebook.svg" class="footer__box-container--icon" alt="facebook link icon"></a>  
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/Icon-instagram.svg" class="footer__box-container--icon" alt="instagram link icon"></a>    
+                    <a href="https://twitter.com/" target="_blank"><img src="img/Icon-twitter.svg" class="footer__box-container--icon" alt="twitter link icon"></a>   
+                </div>
+            </container>    
+        </div>
+    </section>
+    <container class="footer__cr">
+        <p class="footer__cr--p1">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.
+        </p>
+        <p class="footer__cr--p2">
+            © JACK'S INN 2020
+        </p>
+    </container>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

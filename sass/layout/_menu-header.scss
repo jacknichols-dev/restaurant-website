@@ -1,0 +1,25 @@
+.menu-header {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    transform: translateY(16rem);
+    margin-bottom: 15rem;
+
+    &__img {
+        margin: 0 auto;
+        width: 100%;
+        height: 22rem;
+    }
+
+    &__box {
+        background-color: $sec;
+        text-align: center;
+        padding: 5rem 20rem;
+
+        & h2 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
+} 

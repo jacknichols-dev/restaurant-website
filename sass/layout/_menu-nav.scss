@@ -1,0 +1,41 @@
+
+.menu-nav {
+    display: flex;
+    max-width: 100vw;
+    height: 8rem;
+    top: 8rem;
+    z-index: 1;
+    background-color: $pri;
+    animation: navAppear .5s ease-in;
+
+    &__container {
+        display: flex;
+        max-width: 68%;
+        margin: 0 auto; 
+        background-color: $pri;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        margin: 0 auto;
+        list-style-type: none;
+    }
+
+    &__item {
+        font-weight: 600;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        padding: 2.9rem 5rem;
+        transition: all .2s ease;
+
+        &:hover,
+        &:active {
+            color: $sec;
+            background-color: white;
+        }
+    }
+}

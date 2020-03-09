@@ -1,0 +1,232 @@
+
+/*------------- STARTERS SECTION --------------*/
+
+#startersHeader {
+    padding-top: 15.5rem;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 20rem;
+
+    &__box {
+        display: flex;
+
+        &--img {
+            width: 100%;
+            height: 20rem;
+            background-image: url(/img/starters-header.jpg);
+            background-size: cover;
+        }
+
+        &--img-2 {
+            width: 100%;
+            height: 20rem;
+            background-image: url(/img/mains-header.jpg);
+            background-size: cover;
+            background-position: bottom;
+        }
+    
+        &--box {
+            position: absolute;
+            display: flex;
+            height: 20rem;
+            width: 30rem;
+            background-color: $sec;
+            color: white;
+            margin-left: 10rem;
+            align-items: center;
+            justify-content: center;
+    
+            & h1 {
+                font-size: 2.7rem;
+            }
+        }
+    }
+
+    &__prg {
+        text-align: center;
+        width: 70rem;
+        margin: 0 auto;
+        padding: 2rem 0 5rem 0;
+    }
+}
+
+/*------------- STARTERS ITEMS --------------*/
+
+.item-row {
+    display: flex;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+}
+
+.item-container {
+    display: flex;
+    box-shadow: $shadow;
+    border: solid $sec 1px;
+}
+
+.starter-item {
+    display: flex;
+    
+    &__img {
+        background-image: url(/img/starter-1.jpg);
+        width: 23rem;
+        height: 23rem;
+        background-size: cover;
+
+        &--2 {
+            background-image: url(/img/starter-2.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+        
+        &--3 {
+            background-image: url(/img/starter-3.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+        &--4 {
+            background-image: url(/img/starter-4.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+    }
+
+
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        background-color: $pri;
+        width: 24rem;
+        padding: 2rem 3rem;
+        color: white;
+        justify-content: space-between;
+
+        & p {
+            font-size: 1.4rem;
+        }
+
+        &--price {
+            font-size: 1.8rem;
+            color: $sec;
+        }
+    }
+}
+
+/*------------- MAINS SECTION --------------*/
+
+#mainsHeader {
+    padding-top: 15.5rem;
+}
+
+.main-item {
+    display: flex;
+    
+    &__img {
+        background-image: url(/img/main-1.jpg);
+        width: 23rem;
+        height: 23rem;
+        background-size: cover;
+
+        &--2 {
+            background-image: url(/img/main-2.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+        
+        &--3 {
+            background-image: url(/img/main-3.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+        &--4 {
+            background-image: url(/img/main-4.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+        &--5 {
+            background-image: url(/img/main-5.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+        &--6 {
+            background-image: url(/img/main-6.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+        &--7 {
+            background-image: url(/img/main-7.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+        &--8 {
+            background-image: url(/img/main-8.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+        &--9 {
+            background-image: url(/img/main-9.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+        &--10 {
+            background-image: url(/img/main-10.jpg);
+            width: 23rem;
+            height: 23rem;
+            background-size: cover;
+        }
+
+    }
+
+
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        background-color: $pri;
+        width: 24rem;
+        padding: 2rem 3rem;
+        color: white;
+        justify-content: space-between;
+
+        & p {
+            font-size: 1.4rem;
+        }
+
+        &--price {
+            font-size: 1.8rem;
+            color: $sec;
+        }
+    }
+}
+
+
+
+
+
+/*------------- DESSERTS SECTION --------------*/

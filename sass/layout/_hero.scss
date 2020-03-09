@@ -5,7 +5,7 @@
 
     &__img {
         position: fixed;
-        background-image: linear-gradient(to top, rgba(0,0,0, .7), rgba(0,0,0,.1)), url(/img/hero.jpg);
+        background-image: linear-gradient(to top, rgba(0,0,0, .7), rgba(0,0,0,.1)), url(../img/hero.jpg);
         top: 0;
         height: 100%;
         width: 100%;
@@ -35,7 +35,7 @@
 
     &__img1 {
 
-        background-image: url(/img/hero-img1.jpg);
+        background-image: url(../img/hero-img1.jpg);
         height: 25rem;
         background-repeat: no-repeat;
         background-size: contain;
@@ -46,7 +46,7 @@
 
     &__img2 {
 
-        background-image: url(/img/hero-img2.jpg);
+        background-image: url(../img/hero-img2.jpg);
         height: 25rem;
         background-repeat: no-repeat;
         background-size: contain;

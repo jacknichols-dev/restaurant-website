@@ -18,14 +18,14 @@
         &--img {
             width: 100%;
             height: 20rem;
-            background-image: url(/img/starters-header.jpg);
+            background-image: url(../img/starters-header.jpg);
             background-size: cover;
         }
 
         &--img-2 {
             width: 100%;
             height: 20rem;
-            background-image: url(/img/mains-header.jpg);
+            background-image: url(../img/mains-header.jpg);
             background-size: cover;
             background-position: bottom;
         }
@@ -59,43 +59,52 @@
 
 .item-row {
     display: flex;
-    margin-bottom: 5rem;
+    padding: 1rem 4rem;
     justify-content: space-between;
+    background-color: $sec;
 }
 
 .item-container {
     display: flex;
-    box-shadow: $shadow;
+    box-shadow: $shad-small;
     border: solid $sec 1px;
+    margin: 1rem;
 }
 
 .starter-item {
     display: flex;
+    transition: all .2s ease;
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.1);
+        box-shadow: $shadow;
+    }
     
     &__img {
-        background-image: url(/img/starter-1.jpg);
-        width: 23rem;
-        height: 23rem;
+        background-image: url(../img/starter-1.jpg);
+        width: 20rem;
+        height: 20rem;
         background-size: cover;
+        transition: all .2s ease-in-out;
 
         &--2 {
-            background-image: url(/img/starter-2.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/starter-2.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
         
         &--3 {
-            background-image: url(/img/starter-3.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/starter-3.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 
         &--4 {
-            background-image: url(/img/starter-4.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/starter-4.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 
@@ -131,73 +140,79 @@
 
 .main-item {
     display: flex;
+    transition: all .2s ease;
+
+    &:hover {
+        transform: translateY(-1rem) scale(1.1);
+        box-shadow: $shadow;
+    }
     
     &__img {
-        background-image: url(/img/main-1.jpg);
-        width: 23rem;
-        height: 23rem;
+        background-image: url(../img/main-1.jpg);
+        width: 20rem;
+        height: 20rem;
         background-size: cover;
 
         &--2 {
-            background-image: url(/img/main-2.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/main-2.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
         
         &--3 {
-            background-image: url(/img/main-3.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/main-3.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 
         &--4 {
-            background-image: url(/img/main-4.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/main-4.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 
         &--5 {
-            background-image: url(/img/main-5.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/main-5.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 
         &--6 {
-            background-image: url(/img/main-6.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/main-6.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 
         &--7 {
-            background-image: url(/img/main-7.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/main-7.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 
         &--8 {
-            background-image: url(/img/main-8.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/main-8.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 
         &--9 {
-            background-image: url(/img/main-9.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/main-9.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 
         &--10 {
-            background-image: url(/img/main-10.jpg);
-            width: 23rem;
-            height: 23rem;
+            background-image: url(../img/main-10.jpg);
+            width: 20rem;
+            height: 20rem;
             background-size: cover;
         }
 

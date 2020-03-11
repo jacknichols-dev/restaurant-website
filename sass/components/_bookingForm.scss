@@ -1,0 +1,46 @@
+.booking {
+    min-height: 50vh;
+    display: flex;
+    width: 68%;
+    margin: 0 auto;
+    padding-top: 4rem;
+
+
+    &__img {
+        width: 60%;
+        max-height: 100%;
+        background-image: url(../img/form-img.jpg);
+        background-size: cover;
+        background-position: right;
+        margin-top: 8rem;
+    }
+
+    &__form-box {
+        display: flex;
+        margin-top: 8rem;
+        padding: 4rem;
+        height: 80vh;
+        width: 40%;
+        background-color: white;
+        border: solid 1px $sec;
+    }
+
+    &__form-group {
+
+    }
+
+    &__input {
+        padding: 1rem;
+        width: 100%;
+        font-size: 2rem;
+        font-family: inherit;
+        font-weight: 600;
+    }
+}
+
+::-webkit-datetime-edit-text { color: $pri; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: $pri; }
+::-webkit-datetime-edit-day-field { color: $pri; }
+::-webkit-datetime-edit-year-field { color: $pri; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { color: $sec; }

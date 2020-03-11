@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <!-------------------- NAVIGATION ------------------------->
+
+    <nav>
+        <section class="nav">
+            <a href="index.html" class="nav__logo-link"><h3 class="nav__logo">JACK'S INN</h3></a>
+            <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html">Home</a></li>
+                    <li class="nav__item"><a href="menu.html">Menu</a></li>
+                    <li class="nav__item"><a href="#">About</a></li>
+                    <li class="nav__item"><a href="#">Contact</a></li>
+                    <li class="nav__item"><a href="booking.html">Booking</a></li>    
+            </ul>
+
+            <container class="nav-contact">
+                <a href="#">
+                    <img src="img/Icon-phone-alt.svg" alt="contact-icon" class="nav-contact__phone"></img>
+                    <p>000-000-12-34</p>
+                </a>
+
+                <div class="nav-contact__social">
+                    <div class="nav-contact__fb-box">
+                        <a href="https://www.facebook.com/" target="_blank" class="nav-contact__social--li"><img src="img/Icon-facebook.svg" alt="facebook" class="nav-contact__social--fb"></a>
+                    </div>
+
+                    <div class="nav-contact__tw-box">
+                        <a href="https://www.twitter.com/" target="_blank" class="nav-contact__social--li"><img src="img/Icon-twitter.svg" alt="twitter" class="nav-contact__social--tw"></a>    
+                    </div>
+                </div>
+                </container>
+        </section>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+
+    <div class="hamburger">
+        <input type="checkbox" class="hamburger__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="hamburger__button">
+            <span class="hamburger__icon">&nbsp;</span>
+        </label>
+            
+        <div class="hamburger__background">&nbsp;</div>
+
+        <nav class="hamburger__nav">
+            <ul class="hamburger__list">
+                <li class="hamburger__item"><a href="index.html" class="hamburger__link">Home</a></li>
+                <li class="hamburger__item"><a href="menu.html" class="hamburger__link">Menu</a></li>
+                <li class="hamburger__item"><a href="#" class="hamburger__link">About</a></li>
+                <li class="hamburger__item"><a href="#" class="hamburger__link">Contact</a></li>
+                <li class="hamburger__item"><a href="booking.html" class="hamburger__link">Booking</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+        <!-------------------- MAIN MENU SECTION ------------------------->
+
+    <main id="bookingSection"> 
+
+        <container class="booking">
+            <div class="booking__img"></div> 
+            <div class="booking__form-box">
+                <form class="booking__form" action="https://formspree.io/jacknichols_88@yahoo.co.uk"
+                method="POST" target="_blank">
+
+                  <div class="booking__form-group">
+                    <input type="date" id="start" name="reservation date" class="booking__input"  value="2020-03-11">
+                  </div>
+
+
+                  <div class="booking__form-group">
+                    <input type="time" id="start" name="reservation time" class="booking__input" value="13:30">
+                  </div>
+
+                  <select name="people amount" class="booking__forminput" required>
+                    <option value="people amount">1 person</option>
+                    <option value="" selected>2 people</option>
+                    <option value="people amount">3 people</option>
+                    <option value="people amount">4 people</option>
+                    <option value="people amount">5 people</option>
+                    <option value="people amount">6 people</option>
+                    <option value="people amount">7 people or more</option>
+                  </select>
+
+                  <hr>
+    
+                  <div class="form__group">
+                    <input type="text" class="form__input name" name="Name" placeholder="Your name" id="name" required>
+                    <label for="name" class="form__label">Full name</label>
+                  </div>
+    
+                  <div class="form__group">
+                    <input type="email" name="email" class="form__input email" placeholder="Email address" id="email" required>
+                    <label for="email" class="form__label">Email address</label>
+                  </div>
+    
+                  <div class="form__group">
+                    <input type="tel" name="tel" class="form__input telephone" placeholder="phone number" id="tel" required>
+                    <label for="tel" class="form__label">Phone number</label>
+                  </div>
+    
+                  <div class="form__group">
+                    <textarea id="message" type="text" class="form__input message" name="Message" placeholder="Note - not required"></textarea>
+                    <label for="message" class="form__label">Message</label>
+                  </div>
+    
+                  <div class="form__group">
+                    <button type="submit" class="btn btn--form">Reserve a table</button>
+                  </div>
+                </form>
+    
+            </div>
+
+        </container>
+
+    </main>
+
+        <!-------------------- FOOTER ------------------------->
+
+    <section class="footer">
+        <div class="footer__container">
+            <container class="footer__box">
+                <h3>Contact <br>
+                +41 22 734 41 00</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>
+            </container>
+            <container class="footer__box">
+                <h3>Legal Menu</h3>
+                <div class="footer__box-container footer__box-container--2">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Copyright Notice</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </container>
+            <container class="footer__box">
+                <h3>Social Media</h3>
+                <div class="footer__box-container footer__box-container--3">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/Icon-facebook.svg" class="footer__box-container--icon" alt="facebook link icon"></a>  
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/Icon-instagram.svg" class="footer__box-container--icon" alt="instagram link icon"></a>    
+                    <a href="https://twitter.com/" target="_blank"><img src="img/Icon-twitter.svg" class="footer__box-container--icon" alt="twitter link icon"></a>   
+                </div>
+            </container>    
+        </div>
+    </section>
+    <container class="footer__cr">
+        <p class="footer__cr--p1">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.
+        </p>
+        <p class="footer__cr--p2">
+            © JACK'S INN 2020
+        </p>
+    </container>
+
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

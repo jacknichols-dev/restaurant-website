@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
 
+    @include respond(tab-port) {
+        height: 100vh;
+     }
 
     &__img {
         position: fixed;
@@ -24,13 +27,38 @@
         margin: 0 auto;
         align-items: center;
         align-self: flex-start;
+
+
+    @include respond(tab-port) {
+        flex: 1;
+        flex-direction: column;
+        width: 95%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     }
 }
 
 .hero-left {
     max-height: 100vh;
     width: 25rem;
-    animation: slide-in-left 1s ease;
+    animation: slide-in-left 1.2s ease .8s;
+    animation-fill-mode: backwards;
+
+        @include respond(tab-port) {
+            display: flex;
+            width: 95%;
+            flex-direction: column;
+        }
+    
+    &__imgs {
+
+        @include respond(tab-port) {
+            display: flex;
+            margin-top: 8rem;
+         }
+ 
+    }
 
 
     &__img1 {
@@ -38,10 +66,15 @@
         background-image: url(../img/hero-img1.jpg);
         height: 25rem;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         margin: 4rem 0 1.6rem 0;
         border-radius: 1rem;
         border: $b;
+
+        @include respond(tab-port) {
+           width: 50%;
+           margin: 1rem;
+        }
     }
 
     &__img2 {
@@ -49,15 +82,25 @@
         background-image: url(../img/hero-img2.jpg);
         height: 25rem;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         margin-bottom: 4rem;
         border-radius: 1rem;
         border: $b;
+
+        @include respond(tab-port) {
+            width: 50%;
+            margin: 1rem;
+         }
     }
 
     & p {
         color: #fff;
         margin-top: 1rem;
+
+        @include respond(tab-port) {
+            width: 50%;
+            text-align: center;
+         }
     }
 }
 
@@ -66,6 +109,12 @@
     position: relative;
     padding-bottom: .8rem;
     animation: logo .7s ease;
+
+    @include respond(tab-port) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
     & a {
         text-decoration: none;
@@ -117,19 +166,34 @@
     padding: 4rem;
     text-align: center;
     color: #fff;
-    width: 55rem;
+    max-width: 55rem;
     margin: 0 auto;
     height: 27rem;
     background-color: $pri;
     box-shadow: $shadow-1;
-    animation: box 1s ease;
+    animation: box 1s ease .2s;
+    animation-fill-mode: backwards;
+
+    @include respond(tab-port) {
+        width: 95%;
+        padding: 2rem;
+        height: 20rem;
+     }
 
     &__box {
         margin-bottom: 5rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 2rem;
+         }
     }
 
     & p {
         color: $sec;
         margin-bottom: 3rem;
+
+        @include respond(tab-port) {
+           margin-bottom: 1rem;
+         }
     }
 }

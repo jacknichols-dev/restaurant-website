@@ -21,6 +21,10 @@
 .about-btn {
     border-color: $sec;
 
+    @include respond(tab-port) {
+        margin-bottom: 10rem;
+     }
+
     &:hover {
         background-color: $pri;
         color: #fff;

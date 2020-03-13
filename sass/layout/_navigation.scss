@@ -7,6 +7,7 @@ nav {
 
     @include respond (tab-port) {
         background-color: $pri;
+        box-shadow: none;
     }
 }
 
@@ -34,7 +35,6 @@ nav {
     &__list {
         list-style-type: none;
         margin-left: 16rem;
-
 
         @include respond (tab-port) {
             display: none;
@@ -69,6 +69,10 @@ nav {
 .nav-contact {
     display: flex;
     align-items: center;
+
+    @include respond (tab-port-med) {
+        display: none;
+    }
 
     & a{
         color: $pri;
@@ -140,7 +144,7 @@ nav {
 .hamburger {
     display: none;
   
-    @include respond(tab-port-small) {
+    @include respond(tab-port) {
       display: block;
     }
   

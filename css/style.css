@@ -95,6 +95,9 @@ h1, h2, h3 {
 
 .about-btn {
   border-color: #ca9147; }
+  @media only screen and (max-width: 56.25em) {
+    .about-btn {
+      margin-bottom: 10rem; } }
   .about-btn:hover {
     background-color: #00263B;
     color: #fff;
@@ -105,6 +108,9 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .menu-items {
+      flex-direction: column; } }
 
 .item-card {
   position: relative;
@@ -117,6 +123,10 @@ h1, h2, h3 {
     transform: translateY(-8%) scale(1.1); }
   .item-card__img {
     max-width: 100%; }
+    @media only screen and (max-width: 56.25em) {
+      .item-card__img {
+        max-width: 50%;
+        margin: 2rem auto; } }
   .item-card__desc-box {
     background-color: #00263B;
     padding: 1.5rem; }
@@ -179,6 +189,9 @@ h1, h2, h3 {
 .hero {
   display: flex;
   justify-content: center; }
+  @media only screen and (max-width: 56.25em) {
+    .hero {
+      height: 100vh; } }
   .hero__img {
     position: fixed;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(../img/hero.jpg);
@@ -197,36 +210,70 @@ h1, h2, h3 {
     margin: 0 auto;
     align-items: center;
     align-self: flex-start; }
+    @media only screen and (max-width: 56.25em) {
+      .hero__container {
+        flex: 1;
+        flex-direction: column;
+        width: 95%;
+        justify-content: space-evenly;
+        align-items: center; } }
 
 .hero-left {
   max-height: 100vh;
   width: 25rem;
-  animation: slide-in-left 1s ease; }
+  animation: slide-in-left 1.2s ease .8s;
+  animation-fill-mode: backwards; }
+  @media only screen and (max-width: 56.25em) {
+    .hero-left {
+      display: flex;
+      width: 95%;
+      flex-direction: column; } }
+  @media only screen and (max-width: 56.25em) {
+    .hero-left__imgs {
+      display: flex;
+      margin-top: 8rem; } }
   .hero-left__img1 {
     background-image: url(../img/hero-img1.jpg);
     height: 25rem;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin: 4rem 0 1.6rem 0;
     border-radius: 1rem;
     border: solid #ca9147 1px; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-left__img1 {
+        width: 50%;
+        margin: 1rem; } }
   .hero-left__img2 {
     background-image: url(../img/hero-img2.jpg);
     height: 25rem;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin-bottom: 4rem;
     border-radius: 1rem;
     border: solid #ca9147 1px; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-left__img2 {
+        width: 50%;
+        margin: 1rem; } }
   .hero-left p {
     color: #fff;
     margin-top: 1rem; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-left p {
+        width: 50%;
+        text-align: center; } }
 
 .booking-link {
   display: inline-block;
   position: relative;
   padding-bottom: .8rem;
   animation: logo .7s ease; }
+  @media only screen and (max-width: 56.25em) {
+    .booking-link {
+      display: flex;
+      align-items: center;
+      flex-direction: column; } }
   .booking-link a {
     text-decoration: none;
     color: #fff; }
@@ -272,17 +319,29 @@ h1, h2, h3 {
   padding: 4rem;
   text-align: center;
   color: #fff;
-  width: 55rem;
+  max-width: 55rem;
   margin: 0 auto;
   height: 27rem;
   background-color: #00263B;
   box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.7);
-  animation: box 1s ease; }
+  animation: box 1s ease .2s;
+  animation-fill-mode: backwards; }
+  @media only screen and (max-width: 56.25em) {
+    .hero-box {
+      width: 95%;
+      padding: 2rem;
+      height: 20rem; } }
   .hero-box__box {
     margin-bottom: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-box__box {
+        margin-bottom: 2rem; } }
   .hero-box p {
     color: #ca9147;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .hero-box p {
+        margin-bottom: 1rem; } }
 
 nav {
   position: fixed;
@@ -292,7 +351,8 @@ nav {
   background-color: #fff; }
   @media only screen and (max-width: 56.25em) {
     nav {
-      background-color: #00263B; } }
+      background-color: #00263B;
+      box-shadow: none; } }
 
 .nav {
   max-width: 90%;
@@ -335,6 +395,9 @@ nav {
 .nav-contact {
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 60.6em) {
+    .nav-contact {
+      display: none; } }
   .nav-contact a {
     color: #00263B;
     display: flex;
@@ -377,7 +440,7 @@ nav {
 /*********------------------- HAMBURGER NAV --------------------***********/
 .hamburger {
   display: none; }
-  @media only screen and (max-width: 51.25em) {
+  @media only screen and (max-width: 56.25em) {
     .hamburger {
       display: block; } }
   .hamburger__checkbox {
@@ -490,6 +553,9 @@ nav {
   margin: 30rem 0 0 0;
   text-align: center;
   color: #ca9147; }
+  @media only screen and (max-width: 56.25em) {
+    .about-home__title {
+      margin: 10rem 0 0 0; } }
 
 .about-home__secondary-title {
   margin: 1rem 0 1rem 0;
@@ -503,6 +569,10 @@ nav {
 .about-home__chef {
   width: 40rem;
   align-self: stretch; }
+  @media only screen and (max-width: 56.25em) {
+    .about-home__chef {
+      margin: 0 auto;
+      border-radius: 50%; } }
 
 .about-home__cta-box {
   display: flex;
@@ -513,35 +583,65 @@ nav {
   border: 1px solid #00263B;
   border-radius: .3rem;
   box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (max-width: 56.25em) {
+    .about-home__cta-box {
+      flex-direction: column;
+      height: 60rem;
+      margin: 3rem auto 3rem auto;
+      justify-content: space-evenly; } }
+
+.about-home__cta {
+  text-align: center; }
 
 .about-home p {
   margin-bottom: 3rem;
   width: 90%; }
+  @media only screen and (max-width: 56.25em) {
+    .about-home p {
+      margin: 0 auto;
+      padding-bottom: 3rem; } }
 
 .about-home__images {
   display: flex;
   justify-content: space-between;
   margin: 5rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .about-home__images {
+      flex-direction: column;
+      align-items: center; } }
   .about-home__images--1 {
     background-image: url(../img/about-img1.jpg);
     background-size: cover;
     width: 31.6rem;
     height: 31.6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about-home__images--1 {
+        width: 100%;
+        background-position: center; } }
   .about-home__images--2 {
     background-image: url(../img/about-img2.jpg);
     background-size: cover;
     width: 48.2rem;
     height: 31.6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about-home__images--2 {
+        width: 100%; } }
   .about-home__images--3 {
     background-image: url(../img/about-img3.jpg);
     background-size: cover;
     width: 48.2rem;
     height: 31.6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about-home__images--3 {
+        width: 100%; } }
 
 .quick-look {
   min-height: 100%;
   text-align: center;
   margin: 20rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .quick-look {
+      margin: 8rem 0; } }
   .quick-look p {
     padding: 2rem;
     width: 80%;
@@ -551,13 +651,20 @@ nav {
   display: flex;
   background-color: #00263B;
   max-width: 100vw;
-  height: calc(100vh - 8rem); }
+  min-height: calc(100vh - 8rem); }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      flex-direction: column; } }
   .footer__container {
     width: 68%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__container {
+        flex-direction: column;
+        margin-top: 10rem; } }
   .footer__box {
     display: flex;
     flex-direction: column;
@@ -569,6 +676,11 @@ nav {
     text-align: center;
     padding: 3rem 6rem;
     border: solid #fff 1px; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__box {
+        border: none;
+        order: 1;
+        flex: 0 0 100%; } }
     .footer__box h3 {
       color: #ca9147; }
   .footer__cr {
@@ -829,10 +941,17 @@ nav {
   min-height: 100%;
   max-width: 100%;
   clip-path: polygon(0 10vh, 100% 0, 100% 100%, 0 100%); }
+  @media only screen and (max-width: 56.25em) {
+    #main {
+      clip-path: none;
+      top: 100vh; } }
 
 .main-container {
   width: 68%;
   margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .main-container {
+      width: 95%; } }
 
 #main-menu {
   position: relative;

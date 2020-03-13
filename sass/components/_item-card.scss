@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+     }
 }
 
 .item-card {
@@ -19,6 +23,11 @@
 
     &__img {
         max-width: 100%;
+
+        @include respond(tab-port) {
+            max-width: 50%;
+            margin: 2rem auto;
+         }
     }
 
     &__desc-box {

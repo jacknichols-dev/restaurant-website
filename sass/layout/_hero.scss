@@ -3,7 +3,7 @@
     justify-content: center;
 
     @include respond(tab-port) {
-        height: 100vh;
+        min-height: 100%;
      }
 
     &__img {
@@ -29,7 +29,7 @@
         align-self: flex-start;
 
 
-    @include respond(tab-port) {
+    @include respond(phone) {
         flex: 1;
         flex-direction: column;
         width: 95%;
@@ -73,7 +73,7 @@
 
         @include respond(tab-port) {
            width: 50%;
-           margin: 1rem;
+           margin: .5rem;
         }
     }
 
@@ -89,7 +89,7 @@
 
         @include respond(tab-port) {
             width: 50%;
-            margin: 1rem;
+            margin: .5rem;
          }
     }
 
@@ -98,7 +98,7 @@
         margin-top: 1rem;
 
         @include respond(tab-port) {
-            width: 50%;
+            width: 100%;
             text-align: center;
          }
     }
@@ -177,7 +177,7 @@
     @include respond(tab-port) {
         width: 95%;
         padding: 2rem;
-        height: 20rem;
+        height: 21rem;
      }
 
     &__box {

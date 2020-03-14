@@ -21,4 +21,8 @@
     @include respond(tab-port) {
         width: 95%;
      }
+     
+    @include respond(phone-med) {
+        width: 100%;
+     }
 }

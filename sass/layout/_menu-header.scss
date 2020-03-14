@@ -5,10 +5,19 @@
     transform: translateY(16rem);
     margin-bottom: 15rem;
 
+    @include respond(phone) {
+        margin-bottom: 5rem;
+    }
+
     &__img {
         margin: 0 auto;
         width: 100%;
         height: 22rem;
+
+
+        @include respond(phone) {
+            height: 14rem;
+        }
     }
 
     &__box {
@@ -16,10 +25,22 @@
         text-align: center;
         padding: 5rem 20rem;
 
+        @include respond(tab-land) {
+            padding: 4rem 5rem;
+        }
+
+        @include respond(phone) {
+            padding: 2rem;
+        }
+
         & h2 {
             color: white;
             font-size: 2rem;
             margin-bottom: 5rem;
+
+            @include respond(phone) {
+                margin-bottom: 2rem;
+            }
         }
     }
 } 

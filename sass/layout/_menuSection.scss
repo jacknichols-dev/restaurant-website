@@ -20,6 +20,10 @@
             height: 20rem;
             background-image: url(../img/starters-header.jpg);
             background-size: cover;
+
+            @include respond(phone) {
+                background-position: right;
+            }
         }
 
         &--img-2 {
@@ -28,6 +32,10 @@
             background-image: url(../img/mains-header.jpg);
             background-size: cover;
             background-position: bottom;
+
+            @include respond(phone) {
+                background-position: right;
+            }
         }
     
         &--box {
@@ -40,6 +48,14 @@
             margin-left: 10rem;
             align-items: center;
             justify-content: center;
+
+            @include respond(tab-port-small) {
+                width: 15rem;
+                height: 15rem;
+                border-radius: 50%;
+                margin: 2.5rem 0 0 2.5rem;
+                box-shadow: $shadow-1;
+            }
     
             & h1 {
                 font-size: 2.7rem;
@@ -52,6 +68,10 @@
         width: 70rem;
         margin: 0 auto;
         padding: 2rem 0 5rem 0;
+
+        @include respond(tab-port-small) {
+            width: 95%;
+        }
     }
 }
 
@@ -59,19 +79,37 @@
 
 .item-row {
     display: flex;
-    padding: 1.5rem 4rem;
     justify-content: space-between;
+
+    @include respond (tab-port-large ) {
+        flex-wrap: wrap;
+        align-self: stretch;
+    }
 }
 
 .item-container {
     display: flex;
     box-shadow: $shad-small;
-    margin: 1rem;
+    margin: 1rem; 
+
+    @include respond (tab-port-large ) {
+        margin: 1rem auto;
+    }
+
+    @include respond (phone) {
+        &:first-of-type {
+            margin: 5rem auto;
+        }
+    }
 }
 
 .starter-item {
     display: flex;
     transition: all .2s ease;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
 
     &:hover {
         transform: translateY(-1rem) scale(1.1);
@@ -79,11 +117,19 @@
     }
     
     &__img {
-        background-image: url(../img/starter-1.jpg);
-        width: 20rem;
-        height: 20rem;
-        background-size: cover;
+        background-position: center;
         transition: all .2s ease-in-out;
+
+        @include respond(phone) {
+            min-width: 100%;
+        }
+
+        &--1 {
+            background-image: url(../img/starter-1.jpg);
+            width: 20rem;
+            height: 20rem;
+            background-size: cover;
+        }
 
         &--2 {
             background-image: url(../img/starter-2.jpg);
@@ -119,6 +165,10 @@
         color: white;
         justify-content: space-between;
 
+    @include respond(phone) {
+        width: 100%;
+    }
+
         & p {
             font-size: 1.4rem;
         }
@@ -140,16 +190,31 @@
     display: flex;
     transition: all .2s ease;
 
+    @include respond(phone) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
     &:hover {
         transform: translateY(-1rem) scale(1.1);
         box-shadow: $shadow;
     }
     
     &__img {
-        background-image: url(../img/main-1.jpg);
-        width: 20rem;
-        height: 20rem;
-        background-size: cover;
+        background-position: center;
+        transition: all .2s ease-in-out;
+
+        @include respond(phone) {
+            min-width: 100%;
+            height: 100%;
+        }
+
+        &--1 {
+            background-image: url(../img/main-1.jpg);
+            width: 20rem;
+            height: 20rem;
+            background-size: cover;
+        }
 
         &--2 {
             background-image: url(../img/main-2.jpg);
@@ -226,6 +291,10 @@
         padding: 2rem 3rem;
         color: white;
         justify-content: space-between;
+
+        @include respond(phone) {
+            width: 100%;
+        }
 
         & p {
             font-size: 1.4rem;

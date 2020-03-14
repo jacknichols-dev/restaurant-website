@@ -60,7 +60,8 @@ html {
       font-size: 56%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #00263B; }
 
 body {
   font-size: 1.65rem;

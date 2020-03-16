@@ -110,11 +110,6 @@
     @include respond(phone) {
         flex-direction: column;
     }
-
-    &:hover {
-        transform: translateY(-1rem) scale(1.1);
-        box-shadow: $shadow;
-    }
     
     &__img {
         background-position: center;
@@ -160,7 +155,6 @@
         display: flex;
         flex-direction: column;
         background-color: $pri;
-        width: 24rem;
         padding: 2rem 3rem;
         color: white;
         justify-content: space-between;
@@ -193,11 +187,6 @@
     @include respond(phone) {
         flex-direction: column;
         margin: 0 auto;
-    }
-
-    &:hover {
-        transform: translateY(-1rem) scale(1.1);
-        box-shadow: $shadow;
     }
     
     &__img {
@@ -287,7 +276,6 @@
         display: flex;
         flex-direction: column;
         background-color: $pri;
-        width: 24rem;
         padding: 2rem 3rem;
         color: white;
         justify-content: space-between;

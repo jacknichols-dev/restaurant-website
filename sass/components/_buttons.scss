@@ -6,11 +6,29 @@
     color: $sec;
     text-decoration: none;
     transition: all .2s ease;
+    cursor: pointer;
 
     &:hover {
         border: $b-2; 
         color: #fff;
         transition: all .2s ease;
+    }
+
+    &--form {
+        display: flex;
+        color: white;
+        width: 70%;
+        font-weight: 600;
+        font-size: 1.4rem;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: $green;
+        border-color: darken($green, 8);
+
+        &:hover {
+            background-color: lighten($green, $amount: 8);
+            border-color: darken($green, 8);
+        }
     }
 }
 
@@ -31,3 +49,5 @@
         border: solid 1px transparent;
     }
 }
+
+

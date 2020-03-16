@@ -13,6 +13,7 @@
     @include respond(tab-land) {
         background-color: $sec;
         box-shadow: $shadow;
+        top: 5rem;
     }
 
     &__container {

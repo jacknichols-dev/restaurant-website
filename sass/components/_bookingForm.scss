@@ -1,46 +1,195 @@
 .booking {
-    min-height: 50vh;
     display: flex;
     width: 68%;
     margin: 0 auto;
-    padding-top: 4rem;
 
+    @include respond(tab-port) {
+        width: 95%;
+     }
+     
+    @include respond(phone-med) {
+        width: 100%;
+     }
 
     &__img {
-        width: 60%;
+        width: 70%;
         max-height: 100%;
         background-image: url(../img/form-img.jpg);
         background-size: cover;
         background-position: right;
         margin-top: 8rem;
+
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__form-box {
         display: flex;
+        flex-direction: column;
         margin-top: 8rem;
-        padding: 4rem;
         height: 80vh;
-        width: 40%;
-        background-color: white;
+        width: 50%;
+        background-color: #f8f2f2;
         border: solid 1px $sec;
+
+        @include respond(tab-port-small) {
+            width: 70%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        &--top {
+            top: 0;
+            height: 10rem;
+            background-color: $pri;
+            color: white;
+            width: 100%;
+            padding: 2.5rem;
+            text-align: center;
+
+            & span {
+                display: flex;
+                content: '';
+                background-color: $pri;
+                height: 2.5rem;
+                width: 2.5rem;
+                transform: rotate(45deg);
+                margin: 1rem auto 0 auto;
+            }
+        }
     }
 
-    &__form-group {
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 3.5rem 1.3rem;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
 
+    &__radio-group {
+        display: flex;
+        width: 100%;
+    }
+
+    &__time {
+        display: flex;
+    }
+
+    &__select-box {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: space-between;
     }
 
     &__input {
         padding: 1rem;
-        width: 100%;
-        font-size: 2rem;
+        background-color: white;
+        font-size: 1.4rem;
         font-family: inherit;
         font-weight: 600;
+        border-radius: 3px;
+        outline: 0;
+        color: $grey-dark;
+        border: .1rem solid $grey;
+
+        &--date {
+            margin-right: 1rem;
+        }
+
+        &--time {
+            width: 60%;
+        }
+
+        &--people-amount {
+            width: 60%;
+        }
+
+
+        &::-webkit-input-placeholder {
+            color: $grey;
+        }
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-left: 2rem;
+        display: block;
+        transition: all .3s;
+        color: $sec;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
     }
 }
 
-::-webkit-datetime-edit-text { color: $pri; padding: 0 0.3em; }
-::-webkit-datetime-edit-month-field { color: $pri; }
-::-webkit-datetime-edit-day-field { color: $pri; }
-::-webkit-datetime-edit-year-field { color: $pri; }
+input {
+    padding: 1rem .5rem;
+    width: 100%;
+    background-color: white;
+    border: .1rem solid $grey;
+    font-weight: 600;
+    font-size: 1.3rem;
+
+    &[type="radio"] {
+        display: none;
+
+        & + label {
+            @extend input;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+
+            &:first-of-type {
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+            &:last-of-type {
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+
+        }
+
+        &:checked + label {
+            background-color: $sec;
+            color: white;
+            border-color: $grey-dark;
+          }
+    }
+}
+
+hr {
+    margin: 2.5rem 0;
+    border: .5px solid $grey;
+}
+
+select {
+    width: 50%;
+    margin-left: 1rem;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    max-height: 25rem;
+    min-height: 5rem;
+}
+
+::-webkit-datetime-edit-text { color: $grey-dark; padding: 0 0.15em; }
+::-webkit-datetime-edit-month-field { color: $grey-dark; }
+::-webkit-datetime-edit-day-field { color: $grey-dark; }
+::-webkit-datetime-edit-year-field { color: $grey-dark; }
 ::-webkit-inner-spin-button { display: none; }
-::-webkit-calendar-picker-indicator { color: $sec; }
+::-webkit-calendar-picker-indicator { color: $grey-dark; }

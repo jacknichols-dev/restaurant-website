@@ -72,53 +72,76 @@
         <container class="booking">
             <div class="booking__img"></div> 
             <div class="booking__form-box">
+                <div class="booking__form-box--top">
+                    <h3>I want to reserve a table</h3>
+                    <p>at <strong>Jack's Inn</strong></p>
+                    <span></span>
+                </div>
+
                 <form class="booking__form" action="https://formspree.io/jacknichols_88@yahoo.co.uk"
                 method="POST" target="_blank">
 
-                  <div class="booking__form-group">
-                    <input type="date" id="start" name="reservation date" class="booking__input"  value="2020-03-11">
+                <div class="booking__form-group">
+                  <div class="booking__time">
+                        <input type="date" name="reservation date" class="booking__input booking__input--date"  value="2020-03-11" required>
+                        <input type="time" name="reservation time" class="booking__input booking__input--time" value="13:30" required>
                   </div>
 
+                  <div class="booking__select-box">
+                      
+                    <div class="booking__radio-group">
+                        <input type="radio" value="non-smoking" name="smoking" id="non-smoking" required>
+                        <label for="non-smoking" class="booking__radio-label">
+                        non-smoking
+                        </label>
 
-                  <div class="booking__form-group">
-                    <input type="time" id="start" name="reservation time" class="booking__input" value="13:30">
+                        <input type="radio" value="smoking" name="smoking" placeholder="Your name" id="smoking" required>
+                        <label for="smoking" class="booking__radio-label">
+                        smoking
+                        </label>
+
+                      </div>
+    
+    
+                      <select name="people amount" class="booking__input booking__input--people-amount" required>
+                        <option value="people amount">1 person</option>
+                        <option value="" selected>2 people</option>
+                        <option value="people amount">3 people</option>
+                        <option value="people amount">4 people</option>
+                        <option value="people amount">5 people</option>
+                        <option value="people amount">6 people</option>
+                        <option value="people amount">7 people or more</option>
+                      </select>
+    
                   </div>
-
-                  <select name="people amount" class="booking__forminput" required>
-                    <option value="people amount">1 person</option>
-                    <option value="" selected>2 people</option>
-                    <option value="people amount">3 people</option>
-                    <option value="people amount">4 people</option>
-                    <option value="people amount">5 people</option>
-                    <option value="people amount">6 people</option>
-                    <option value="people amount">7 people or more</option>
-                  </select>
+                  </div>
 
                   <hr>
     
-                  <div class="form__group">
-                    <input type="text" class="form__input name" name="Name" placeholder="Your name" id="name" required>
-                    <label for="name" class="form__label">Full name</label>
+                  <div class="booking__form-group">
+                    <input type="text" class="booking__input" name="Name" placeholder="Your name" id="name" required>
+                    <label for="name" class="booking__label">Full name</label>
                   </div>
     
-                  <div class="form__group">
-                    <input type="email" name="email" class="form__input email" placeholder="Email address" id="email" required>
-                    <label for="email" class="form__label">Email address</label>
+                  <div class="booking__form-group">
+                    <input type="email" name="email" class="booking__input" placeholder="Email address" id="email" required>
+                    <label for="email" class="booking__label">Email address</label>
                   </div>
     
-                  <div class="form__group">
-                    <input type="tel" name="tel" class="form__input telephone" placeholder="phone number" id="tel" required>
-                    <label for="tel" class="form__label">Phone number</label>
+                  <div class="booking__form-group">
+                    <input type="tel" name="tel" class="booking__input" placeholder="phone number" id="tel" required>
+                    <label for="tel" class="booking__label">Phone number</label>
                   </div>
     
-                  <div class="form__group">
-                    <textarea id="message" type="text" class="form__input message" name="Message" placeholder="Note - not required"></textarea>
-                    <label for="message" class="form__label">Message</label>
+                  <div class="booking__form-group">
+                    <textarea id="message" type="text" class="booking__input" name="Message" placeholder="Note - not required"></textarea>
+                    <label for="message" class="booking__label">Message</label>
                   </div>
     
-                  <div class="form__group">
+                  <div class="booking__form-group">
                     <button type="submit" class="btn btn--form">Reserve a table</button>
                   </div>
+
                 </form>
     
             </div>
@@ -163,6 +186,12 @@
             © JACK'S INN 2020
         </p>
     </container>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
 
     <script src="/js/main.js"></script>
 

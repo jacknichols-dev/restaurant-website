@@ -19,6 +19,10 @@ nav {
     align-items: center;
     justify-content: space-between;
 
+    @include respond(tab-port) {
+        height: 5.5rem;
+     }
+
     &__logo-link {
         text-decoration: none;
         color: $pri;
@@ -34,10 +38,10 @@ nav {
 
     &__list {
         list-style-type: none;
-        margin-left: 16rem;
+        margin-left: 14rem;
 
         @include respond (tab-port-large ) {
-            margin-left: 10rem;
+            margin-left: 0;
         }
         @include respond (tab-port) {
             display: none;
@@ -161,15 +165,19 @@ nav {
   
     &__button {
         background-color: $pri;
-        height: 5.7rem;
+        height: 3.7rem;
         width: 5.7rem;
         position: fixed;
-        top: 1rem;
+        top: 0;
         right: 4rem;
         border-radius: 50%;
         z-index: 2000;
         text-align: center;
         cursor: pointer;
+
+        @include respond(phone) {
+            right: 1rem;
+        }
     }
   
     &__background {
@@ -182,6 +190,10 @@ nav {
         background-color: $pri;
         z-index: 1000;
         transition: transform .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        @include respond(phone) {
+            right: 1rem;
+        }
     }
   
     &__nav {
@@ -265,13 +277,13 @@ nav {
         &::before,
         &::after {
             width: 3rem;
-            height: 1.5px;
+            height: 1px;
             background-color: white;
             display: inline-block;
             border-radius: 1.5rem;
   
             @include respond(phone) {
-                width: 2.7rem;
+                width: 2.2rem;
             }
         }
   

@@ -13,7 +13,13 @@
     @include respond(tab-land) {
         background-color: $sec;
         box-shadow: $shadow;
-        top: 5rem;
+    }
+
+    @include respond(tab-port) {
+        background-color: $sec;
+        box-shadow: $shadow;
+        top: 5.5rem;
+        height: 6rem;
     }
 
     &__container {
@@ -43,12 +49,16 @@
         padding: 2.9rem 5rem;
         transition: all .2s ease;
 
-        @include respond (tab-port-large ) {
+        @include respond (tab-port-large) {
             padding: 2.9rem 3rem;
         }
 
+        @include respond (tab-port) {
+            padding: 2rem 3rem;
+        }
+
         @include respond(phone) {
-            padding: 2.9rem 1rem;
+            padding: 2rem 1rem;
         }
 
         &:hover,

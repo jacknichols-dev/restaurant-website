@@ -3,6 +3,10 @@
 
 #startersHeader {
     padding-top: 15.5rem;
+
+    @include respond(tab-port) {
+        padding-top: 11rem;
+    }
 }
 
 .section-header {
@@ -178,6 +182,10 @@
 
 #mainsHeader {
     padding-top: 15.5rem;
+
+    @include respond(tab-port) {
+        padding-top: 11rem;
+    }
 }
 
 .main-item {

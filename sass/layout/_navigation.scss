@@ -295,8 +295,8 @@ nav {
             transition: all .3s;
         }
   
-        &::before {top: -.9rem;}
-        &::after {top: .9rem;}
+        &::before {top: -.7rem;}
+        &::after {top: .7rem;}
     }
   
     &__button:hover &__icon::before {

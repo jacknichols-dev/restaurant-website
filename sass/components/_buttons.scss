@@ -38,6 +38,9 @@
 
 .about-btn {
     border-color: $sec;
+    background-color: $sec;
+    color: white;
+    font-weight: 600;
 
     @include respond(tab-port) {
         margin-bottom: 10rem;
@@ -51,7 +54,7 @@
 }
 
 .btn-hero {
-    width: 20rem;
+    width: 15rem;
     margin: 0 auto;
 }
 

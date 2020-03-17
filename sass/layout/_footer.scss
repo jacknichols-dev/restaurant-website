@@ -19,6 +19,7 @@
         @include respond(tab-port) {
             flex-direction: column;
             margin-top: 10rem;
+            display: flex;
          }
     }
 

@@ -41,6 +41,18 @@
                 background-position: right;
             }
         }
+
+        &--img-3 {
+            width: 100%;
+            height: 20rem;
+            background-image: url(../img/dessert-header.jpg);
+            background-size: cover;
+            background-position: center;
+
+            @include respond(phone) {
+                background-position: right;
+            }
+        }
     
         &--box {
             position: absolute;
@@ -277,6 +289,88 @@
             background-size: cover;
         }
 
+    }
+
+
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        background-color: $pri;
+        padding: 2rem 3rem;
+        color: white;
+        justify-content: space-between;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        & p {
+            font-size: 1.4rem;
+        }
+
+        &--price {
+            font-size: 1.8rem;
+            color: $sec;
+        }
+    }
+}
+
+/*------------- DESSERT SECTION --------------*/
+
+#dessertsHeader {
+    padding-top: 15.5rem;
+
+    @include respond(tab-port) {
+        padding-top: 11rem;
+    }
+}
+
+.dessert-item {
+    display: flex;
+    transition: all .2s ease;
+
+    @include respond(phone) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    &__img {
+        background-position: center;
+        transition: all .2s ease-in-out;
+
+        @include respond(phone) {
+            min-width: 100%;
+            height: 100%;
+        }
+
+        &--1 {
+            background-image: url(../img/dessert-1.jpg);
+            width: 20rem;
+            height: 20rem;
+            background-size: cover;
+        }
+
+        &--2 {
+            background-image: url(../img/dessert-2.jpg);
+            width: 20rem;
+            height: 20rem;
+            background-size: cover;
+        }
+        
+        &--3 {
+            background-image: url(../img/dessert-3.jpg);
+            width: 20rem;
+            height: 20rem;
+            background-size: cover;
+        }
+
+        &--4 {
+            background-image: url(../img/dessert-4.jpg);
+            width: 20rem;
+            height: 20rem;
+            background-size: cover;
+        }
     }
 
 

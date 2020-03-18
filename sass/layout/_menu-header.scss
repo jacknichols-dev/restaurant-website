@@ -2,21 +2,22 @@
     display: flex;
     flex-direction: column;
     min-width: 100%;
-    transform: translateY(16rem);
+    transform: translateY(15rem);
     margin-bottom: 15rem;
 
-    @include respond(phone) {
-        margin-bottom: 5rem;
+    @include respond(tab-port) {
+        transform: translateY(11.5rem);
     }
 
     &__img {
-        margin: 0 auto;
-        width: 100%;
-        height: 22rem;
+        background-image: url(/img/menu-img-top.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30rem;
 
 
         @include respond(phone) {
-            height: 14rem;
+            height: 22rem;
         }
     }
 

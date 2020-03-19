@@ -28,43 +28,56 @@
 
     &__chef {
         width: 40rem;
-        align-self: stretch;
 
         @include respond(tab-port) {
             margin: 0 auto;
-            border-radius: 50%;
+         }
+
+        @include respond(phone) {
+            width: 30rem;
          }
     }
 
     &__cta-box {
         display: flex;
         margin: 5rem 0 .5rem 0;
-        align-items: center;
         height: 29.8rem;
         background-color: transparent;
         border: 1px solid $pri;
         border-radius: .3rem;
         box-shadow: $shadow;
 
+        @include respond(tab-port-large) {
+            height: 35rem;
+        }
+
         @include respond(tab-port) {
             flex-direction: column;
-            height: 60rem;
+            height: 55rem;
             margin: 3rem auto 3rem auto;
-            justify-content: space-evenly;
+         }
+        @include respond(phone) {
+            height: 58rem;
          }
     }
 
     &__cta {
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        justify-content: space-evenly;
+        margin: 0 5rem;
+
+        @include respond(tab-port-large) {
+            margin: 0 2rem;
+        }
     }
 
     & p {
-        margin-bottom: 3rem;
-        width: 90%;
+        width: 100%;
 
         @include respond(tab-port) {
-            margin: 0 auto;
-            padding-bottom: 3rem;
+            margin: 3rem auto;
          }
     }
 
@@ -81,18 +94,19 @@
         &--1 {
             background-image: url(../img/about-img1.jpg);
             background-size: cover;
+            background-position: center;
             width: 31.6rem;
             height: 31.6rem;
 
             @include respond(tab-port) {
                 width: 100%;
-                background-position: center;
              }
         }
         
         &--2 {
             background-image: url(../img/about-img2.jpg);
             background-size: cover;
+            background-position: right;
             width: 48.2rem;
             height: 31.6rem;
 

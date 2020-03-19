@@ -31,8 +31,9 @@
         @include respond(tab-port) {
             flex: 1;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
+            margin-top: 3.5rem;
         }
     }
 }
@@ -43,19 +44,26 @@
     animation: slide-in-left 1.2s ease .8s;
     animation-fill-mode: backwards;
 
-        @include respond(tab-port) {
-            display: flex;
-            width: 80%;
-            flex-direction: column;
-        }
-    
+    @include respond(tab-port) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: $sec;
+        text-align: center;
+    }
+
+    @include respond(phone) {
+        width: 100vw;
+    }
+
     &__imgs {
 
         @include respond(tab-port) {
-            display: flex;
-            margin: 8rem 0 2rem 0;
-         }
- 
+            display:none
+        }
     }
 
 
@@ -68,15 +76,6 @@
         margin: 4rem 0 1.6rem 0;
         border-radius: 1rem;
         border: $b;
-
-        @include respond(tab-port) {
-           width: 50%;
-           height: 22rem;
-           margin: .5rem;
-        }
-        @include respond(phone) {
-            display: none;
-        }
     }
 
     &__img2 {
@@ -88,26 +87,16 @@
         margin-bottom: 4rem;
         border-radius: 1rem;
         border: $b;
-
-        @include respond(tab-port) {
-            width: 50%;
-            height: 22rem;
-            margin: .5rem;
-         }
-
-        @include respond(phone) {
-            margin: 0 auto 2rem auto;
-            width: 95%;
-         }
     }
 
     & p {
         color: #fff;
         margin-top: 1rem;
 
+
         @include respond(tab-port) {
-            display: none;
-         }
+            display:none
+        }
     }
 }
 
@@ -116,12 +105,6 @@
     position: relative;
     padding-bottom: .8rem;
     animation: logo .7s ease;
-
-    @include respond(tab-port) {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
 
     & a {
         text-decoration: none;
@@ -145,6 +128,7 @@
     width: 0;
     transition: width 0s ease, background .5s;
 }
+
 .booking-link:after {
     content: '';
     display: block;
@@ -156,11 +140,13 @@
     background: $sec;
     transition: width .5s ease;
 }
+
 .booking-link:hover:before {
     width: 100%;
     background: $sec;
     transition: width .5s ease;
 }
+
 .booking-link:hover:after {
     width: 100%;
     background: transparent;
@@ -170,7 +156,7 @@
 .hero-box {
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 2rem;
     text-align: center;
     color: #fff;
     max-width: 55rem;
@@ -182,17 +168,17 @@
     animation-fill-mode: backwards;
 
     @include respond(tab-port) {
-        width: 100vw;
-        padding: 2rem;
-        height: 21rem;
+        height: 25rem;
+        box-shadow: none;
+        width: 50%;
      }
+
+     @include respond(phone) {
+        min-width: 100vw;
+    }
 
     &__box {
         margin-bottom: 5rem;
-
-        @include respond(tab-port) {
-            margin-bottom: 2rem;
-         }
     }
 
     & p {

@@ -30,7 +30,7 @@
 
         @include respond(tab-port) {
             flex: 1;
-            flex-direction: column;
+            flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
             margin-top: 3.5rem;
@@ -53,10 +53,11 @@
         padding: 2rem;
         background-color: $sec;
         text-align: center;
+        animaion: none;
     }
 
     @include respond(phone) {
-        width: 100vw;
+        width: 100%;
     }
 
     &__imgs {
@@ -159,7 +160,7 @@
     padding: 2rem;
     text-align: center;
     color: #fff;
-    max-width: 55rem;
+    width: 55rem;
     margin: 0 auto;
     height: 27rem;
     background-color: $pri;
@@ -174,7 +175,7 @@
      }
 
      @include respond(phone) {
-        min-width: 100vw;
+        width: 100%;
     }
 
     &__box {

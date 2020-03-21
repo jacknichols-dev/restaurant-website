@@ -5,7 +5,7 @@
 
     &__title {
         font-size: 3rem;
-        margin: 30rem 0 0 0;
+        margin: 20rem 0 0 0;
         text-align: center;
         color: $sec;
 
@@ -27,19 +27,23 @@
     }
 
     &__chef {
-        width: 40rem;
+        background-image: url(../img/chef.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
 
         @include respond(tab-port) {
-            margin: 0 auto;
+            width: 30rem;
          }
 
         @include respond(phone) {
-            width: 30rem;
+            display: none;
          }
     }
 
     &__cta-box {
         display: flex;
+        justify-content: space-between;
         margin: 5rem 0 .5rem 0;
         height: 29.8rem;
         background-color: transparent;
@@ -47,17 +51,14 @@
         border-radius: .3rem;
         box-shadow: $shadow;
 
-        @include respond(tab-port-large) {
-            height: 35rem;
-        }
-
-        @include respond(tab-port) {
-            flex-direction: column;
-            height: 55rem;
-            margin: 3rem auto 3rem auto;
-         }
         @include respond(phone) {
-            height: 58rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+         }
+
+        @include respond(phone-small) {
+            height: 35rem;
          }
     }
 
@@ -67,6 +68,7 @@
         text-align: center;
         justify-content: space-evenly;
         margin: 0 5rem;
+        width: 100%;
 
         @include respond(tab-port-large) {
             margin: 0 2rem;
@@ -74,10 +76,11 @@
     }
 
     & p {
-        width: 100%;
+        width: 90%;
 
         @include respond(tab-port) {
             margin: 3rem auto;
+            width: 95%;
          }
     }
 

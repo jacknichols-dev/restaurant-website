@@ -1,4 +1,9 @@
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15rem;
+    margin: 0 auto;
     padding: .9rem 3rem;
     background-color: transparent;
     border: $b;
@@ -37,22 +42,19 @@
 }
 
 .about-btn {
-    border-color: $sec;
-    background-color: $sec;
+    background-color: $pri;
     color: white;
     font-weight: 600;
-    margin: 2rem auto;
+    width: 16rem;
 
     &:hover {
-        background-color: $pri;
-        color: #fff;
-        border: solid 1px transparent;
+        background-color: lighten($pri, 8);
+        border: $b;
     }
 }
 
 .btn-hero {
-    width: 15rem;
-    margin: 0 auto;
+    margin-top: 2rem;
 }
 
 
